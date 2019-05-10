@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            box-sizing: content-box;
+            margin: 0;
+        }
+
+        h2 {
+            color: #d16c60;
+        }
+
+        .header {
+            background-color: #d16c60;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            height: 100px;
+            margin-bottom: 20px;
+            justify-content: center;
+        }
+        .header .titulo {
+            
+        }
+
+        .principal {
+            display: grid;
+            grid-template-columns: 1fr 5px 1fr;
+            grid-gap: 10px;
+            justify-content: center;
+        }
+        .principal .division {
+            background-color: #d16c60;
+            height: 100%;
+        }
+        .contenido {
+            padding: 0 30px;
+        }
+        .contenido:nth-child(1){
+            margin-left:40px;
+        }
+        .contenido:nth-last-child(1){
+            margin-right: 40px;
+        }
+
+        .footer {
+            background: #fafafa;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="titulo">Prueba</div>
+        <div class="logo"></div>
+    </header>
+    <section class="principal">
+        <div class="contenido contenido-izquierdo">
+            <articile class="article">
+                <h2 class="">Este es un título de prueba</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro inventore deleniti, maiores
+                    reprehenderit amet itaque eligendi laborum? Praesentium amet officiis ipsum earum, temporibus iure
+                    perspiciatis, consequatur quibusdam dolores aliquam repellendus?</p>
+                </article>
+                <articile class="article">
+                    <h2 class="">Este es un título de prueba</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro inventore deleniti, maiores
+                        reprehenderit amet itaque eligendi laborum? Praesentium amet officiis ipsum earum, temporibus
+                        iure perspiciatis, consequatur quibusdam dolores aliquam repellendus?</p>
+                    </article>
+        </div>
+        <div class="division"></div>
+        <div class="contenido contenido-derecho">
+            <articile class="article">
+                <h2 class="">Este es un título de prueba</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro inventore deleniti, maiores
+                    reprehenderit amet itaque eligendi laborum? Praesentium amet officiis ipsum earum, temporibus iure
+                    perspiciatis, consequatur quibusdam dolores aliquam repellendus?</p>
+                </article>
+                <articile class="article">
+                    <h2 class="">Este es un título de prueba</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro inventore deleniti, maiores
+                        reprehenderit amet itaque eligendi laborum? Praesentium amet officiis ipsum earum, temporibus
+                        iure perspiciatis, consequatur quibusdam dolores aliquam repellendus?</p>
+                    </article>
+        </div>
+    </section>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
