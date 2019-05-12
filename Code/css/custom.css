@@ -326,6 +326,16 @@ h2.titulo-pagina-principal {
 	padding-bottom: 30px;
 }
 
+.Botones {
+	background: #5fa137;
+	border-radius: 10px;
+	padding: 40px;
+	font-size: 20px;
+	color: #193c62;
+}
+.contenedor-botones {
+	padding: 10px;
+}
 @media screen and (max-width: 800px){
 	.no-js .menu-panel {
 		display: none;
