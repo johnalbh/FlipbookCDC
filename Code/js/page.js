@@ -125,17 +125,20 @@ var Page = (function() {
 		$menuItems.removeClass( 'menu-toc-current' ).eq( current ).addClass( 'menu-toc-current' );
 	}
 
+
 	function updateNavigation( isLastPage ) {
 		
 		if( current === 0 ) {
 			$navNext.show();
 			$navPrev.hide();
+			document.getElementById("header").className =document.getElementById("header").className.replace( /(?:^|\s)header-paginas(?!\S)/g , '' )
 		}
 		else if( isLastPage ) {
 			$navNext.hide();
 			$navPrev.show();
 		}
 		else {
+			var a=document.getElementById("header").className += " header-paginas";
 			$navNext.show();
 			$navPrev.show();
 		}
@@ -174,3 +177,4 @@ var Page = (function() {
 	return { init : init };
 
 })();
+

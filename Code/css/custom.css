@@ -24,22 +24,33 @@ body {
 .js body {
 	overflow: hidden;
 }
+
+ul.contenido li {
+	font-size: 1.2em;
+	line-height: 1.6;
+	font-weight: 300;
+	text-align: justify;
+	padding-bottom: 10px; 
+	list-style: inside;
+}
 .header {
-	background-color: #e26f62;
+	background-color: #ffffff;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	justify-content: center;
 	padding: 20px 0;
 }
+
+
 .header h2 {
-	font-weight: 300;
-	font-size: 1.5em;
-	color: #fff;
+	font-weight: 600;
+	font-size: 1.2em;
+	color: #2036fb;
 	width: 70%;
 
 }
 .header .titulo {
-	justify-self: center;
+	justify-self: start;
 	align-self: center;
 	display: grid;
 }
@@ -49,6 +60,13 @@ body {
 }
 .header .imagen-principal img.imagen-logos {
 	max-width: 70%;
+}
+.header-paginas{
+	background-color: #e26f62;
+
+}
+.header-paginas h2 {
+	color: #ffffff;
 }
 
 .titulo-principal {
@@ -222,13 +240,20 @@ a:hover {
 }
 
 .scroller {
-	padding: 10px 5% 10px 5%;
+	padding: 30px 5% 10px 5%;
 	display: grid;
-	grid-template-columns:  1fr 2px 1fr;
+	grid-template-columns:  1fr 3px 1fr;
 	grid-gap: 50px;
+}
+.principal {
+	background-color: #2036fb !important;
 }
 .linea-central {
 	background: #e26f62;
+}
+.content {
+	display: grid;
+	grid-template-rows: 1fr;
 }
 .js .content:before,
 .js .content:after {
@@ -240,28 +265,45 @@ a:hover {
 	height: 20px;
 	z-index: 100;
 	pointer-events: none;
-	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
-	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
-	background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
-	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+
 }
 
 .js .content:after {
 	top: auto;
 	bottom: 0;
-	background: -webkit-linear-gradient(bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
-	background: -moz-linear-gradient(bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
-	background: -o-linear-gradient(bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
-	background: linear-gradient(to top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+
 }
 
 .content h2 {
-	font-weight: 300;
-	font-size: 2.0em;
+	font-weight: 600;
+	font-size: 1.2em;
 	color: #e26f62;
 	margin-bottom: 20px;
 	text-align: left;
 	text-shadow: 0 0 2px #fff;
+}
+
+.content h4 {
+	font-weight: 400;
+	font-size: 1.0em;
+	color: #e26f62;
+	margin-bottom: 20px;
+	text-align: left;
+	text-shadow: 0 0 2px #fff;
+}
+
+
+h2.titulo-pagina-principal {
+	font-weight: 400;
+	font-size: 2.5em;
+	color: #9ed5b2;
+	margin-bottom: 20px;
+	text-align: left;
+	text-shadow:none;
+
+}
+.scroller-principal {
+	align-self: center;
 }
 
 .no-js .content h2 {
@@ -274,6 +316,9 @@ a:hover {
 	font-weight: 300;
 	text-align: justify;
 	padding-bottom: 10px; 
+}
+.item {
+	padding-bottom: 30px;
 }
 
 @media screen and (max-width: 800px){
