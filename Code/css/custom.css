@@ -292,10 +292,15 @@ a:hover {
 	text-shadow: 0 0 2px #fff;
 }
 
-
+.border {
+	background-color: #9ed5b2;
+	width: 100px;
+	height: 10px;
+	margin-bottom: 20px;
+}
 h2.titulo-pagina-principal {
-	font-weight: 400;
-	font-size: 2.5em;
+	font-weight: 700;
+	font-size: 3.2em;
 	color: #9ed5b2;
 	margin-bottom: 20px;
 	text-align: left;

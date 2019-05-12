@@ -132,12 +132,15 @@ var Page = (function() {
 			$navNext.show();
 			$navPrev.hide();
 			document.getElementById("header").className =document.getElementById("header").className.replace( /(?:^|\s)header-paginas(?!\S)/g , '' )
+			$("#logo-superior").attr("src","img/ImagenSuperiorNegro.png");
+			
 		}
 		else if( isLastPage ) {
 			$navNext.hide();
 			$navPrev.show();
 		}
 		else {
+			$("#logo-superior").attr("src","img/logo-Superior.png");
 			var a=document.getElementById("header").className += " header-paginas";
 			$navNext.show();
 			$navPrev.show();
