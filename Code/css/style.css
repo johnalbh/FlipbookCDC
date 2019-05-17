@@ -1,0 +1,23 @@
+body{
+    height: 100vh !important;
+}
+.container-central{
+    display: grid;
+    grid-template-rows: 150px  1fr 50px;
+
+}
+.header {
+    background: #3a6ea5;
+}
+.bb-item{
+    display: grid;
+    overflow: scroll;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1,1fr);
+    justify-content: center;
+    align-content: center;
+}
+.container-contenido {
+    display: grid;
+    grid-template-rows: 20px 1fr;
+}
