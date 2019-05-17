@@ -193,11 +193,6 @@ a:hover {
     -webkit-font-smoothing: subpixel-antialiased;
 }
 
-.contenido-hoja {
-    display: grid;
-    padding: 10px 5% 10px 5%;
-}
-
 .js .content:before,
 .js .content:after {
     content: '';
@@ -224,13 +219,11 @@ a:hover {
 }
 
 .content h2 {
-    font-weight: 300;
-    font-size: 4em;
-    padding: 0 0 10px;
-    color: #333;
-    margin: 0 1% 40px;
+    font-weight: 600;
+    font-size: 1.2em;
+    color: #e26f62;
+    margin-bottom: 20px;
     text-align: left;
-    box-shadow: 0 10px 0 rgba(0, 0, 0, 0.02);
     text-shadow: 0 0 2px #fff;
 }
 
@@ -242,7 +235,6 @@ a:hover {
     font-size: 1.2em;
     line-height: 1.6;
     font-weight: 300;
-    padding: 5px 8%;
     text-align: justify;
 }
 
@@ -262,17 +254,27 @@ a:hover {
     }
 }
 
+
+/** Estilo Personalizados **/
+
 .contenido-hoja {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 3px 1fr;
+    grid-column-gap: 20px;
+    padding: 10px 5% 10px 5%;
 }
 
 .header {
     height: 100px;
-    background-color: #dd1338;
+    background-color: #e26f62;
 }
 
 .header-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+}
+
+.middle-line {
+    background-color: #bc0b0b;
+    height: 50%;
 }
