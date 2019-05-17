@@ -272,9 +272,22 @@ a:hover {
 .header-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-content: center;
+}
+
+.header-container h2 {
+    font-weight: 600;
+    font-size: 1.2em;
+    width: 70%;
+    color: #fff;
 }
 
 .middle-line {
     background-color: #bc0b0b;
     height: 50%;
+}
+
+img {
+    max-width: 100%;
 }
