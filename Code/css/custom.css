@@ -274,6 +274,12 @@ a:hover {
     grid-column-gap: 20px;
     padding: 10px 5% 10px 5%;
 }
+.contenido-hoja-terciaria{
+    display: grid;
+    grid-template-columns: 20% 20% 1fr ;
+    grid-column-gap: 20px;
+    padding: 10px 5% 10px 5%;
+}
 .header {
     background-color: #e26f62;
 }
@@ -371,6 +377,23 @@ ul {
     justify-self: center;
 }
 .contenido-hoja-secundaria p {
-    font-size: 1.5rem;
-    font-weight: 800;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: left;
+}
+.contenido-hoja-terciaria p {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: left;
+}
+.left-diseno-3{
+    align-self: center;
+    justify-self: center;
+}
+.right-diseno-3{
+    justify-self: center;
+    align-self: center;
+}
+.titulo-logo{
+    text-align: center;
 }
