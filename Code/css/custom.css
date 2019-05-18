@@ -16,10 +16,9 @@ html {
 body {
     font-family: 'Lato', Calibri, Arial, sans-serif;
     background: #fff;
-    font-weight: 400;
-    font-size: 100%;
     color: #333;
     height: 100%;
+    font-size: 100%;
 }
 
 .js body {
@@ -296,4 +295,17 @@ img.logo{
 }
 .logo {
     text-align: center;
+}
+p strong{
+    color: #e26f62;
+}
+.bloque-texto{
+    padding: 20px 0;
+}
+ul {
+    list-style: inside;
+    font-size: 1.2em;
+    line-height: 1.6;
+    font-weight: 300;
+    text-align: justify;
 }
