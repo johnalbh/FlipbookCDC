@@ -286,6 +286,19 @@ a:hover {
     grid-column-gap: 20px;
     padding: 10px 5% 10px 5%;
 }
+.contenido-hoja-quinta{
+    display: grid;
+    grid-template-columns: 1fr 20%;
+    grid-column-gap: 20px;
+    padding: 10px 5% 10px 5%;
+}
+.contenido-hoja-sexta{
+    display: grid;
+    grid-template-columns: 1fr 20%;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    padding: 10px 5% 10px 5%;
+}
 .header {
     background-color: #e26f62;
 }
@@ -403,4 +416,10 @@ ul {
 }
 .titulo-logo{
     text-align: center;
+}
+.padding-16{
+    padding-top: 50%;
+}
+.bottom-diseno-sexta {
+    grid-column: 1/3;
 }
