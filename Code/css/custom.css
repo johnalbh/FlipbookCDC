@@ -270,7 +270,7 @@ a:hover {
 }
 .contenido-hoja-secundaria{
     display: grid;
-    grid-template-columns: 30% 1fr;
+    grid-template-columns: 20% 1fr;
     grid-column-gap: 20px;
     padding: 10px 5% 10px 5%;
 }
@@ -369,4 +369,8 @@ ul {
 }
 .right-diseno-2{
     justify-self: center;
+}
+.contenido-hoja-secundaria p {
+    font-size: 1.5rem;
+    font-weight: 800;
 }
