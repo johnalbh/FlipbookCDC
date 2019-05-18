@@ -264,7 +264,7 @@ a:hover {
 }
 .contenido-hoja-central {
     display: grid;
-    grid-template-columns: 50%;
+    grid-template-columns: 60%;
     justify-content: center;
     padding: 10px 5% 10px 5%;
 }
@@ -274,13 +274,13 @@ a:hover {
     grid-column-gap: 20px;
     padding: 10px 5% 10px 5%;
 }
-.contenido-hoja-terciaria{
+.contenido-hoja-three-columns{
     display: grid;
     grid-template-columns: 20% 20% 1fr ;
     grid-column-gap: 20px;
     padding: 10px 5% 10px 5%;
 }
-.contenido-hoja-cuarta{
+.contenido-hoja-two-columns-equals{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 20px;
@@ -292,10 +292,10 @@ a:hover {
     grid-column-gap: 20px;
     padding: 10px 5% 10px 5%;
 }
-.contenido-hoja-sexta{
+.contenido-hoja-two-columns-diff-two-rows{
     display: grid;
     grid-template-columns: 1fr 20%;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: 1fr 20%;
     grid-column-gap: 20px;
     padding: 10px 5% 10px 5%;
 }
@@ -310,8 +310,9 @@ a:hover {
     background-color: #e26f62;
 }
 hr{
-    color: #e26f62;
+    background: #e26f62;
     border: 1px solid #e26f62;
+    height: 10px;
     width: 30%;
     margin-bottom: 10px;
 }
