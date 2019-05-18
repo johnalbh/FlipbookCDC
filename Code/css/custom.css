@@ -299,6 +299,13 @@ a:hover {
     grid-column-gap: 20px;
     padding: 10px 5% 10px 5%;
 }
+.contenido-four-columns-two-rows{
+    display: grid;
+    grid-template-columns: 20% 1fr 20% 1fr ;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    padding: 10px 5% 10px 5%;
+}
 .header {
     background-color: #e26f62;
 }
