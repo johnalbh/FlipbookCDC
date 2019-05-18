@@ -220,7 +220,7 @@ a:hover {
 
 .content h2 {
     font-weight: 600;
-    font-size: 1.2em;
+    font-size: 1.4em;
     color: #e26f62;
     margin-bottom: 20px;
     text-align: left;
@@ -259,35 +259,41 @@ a:hover {
 
 .contenido-hoja {
     display: grid;
-    grid-template-columns: 1fr 3px 1fr;
+    grid-template-columns: 1fr 2px 1fr;
     grid-column-gap: 20px;
     padding: 10px 5% 10px 5%;
 }
 
 .header {
-    height: 100px;
     background-color: #e26f62;
 }
 
 .header-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    align-content: center;
+    grid-template-rows: 150px;
+    justify-items: center;
+    align-items: center;
 }
 
 .header-container h2 {
     font-weight: 600;
-    font-size: 1.2em;
-    width: 70%;
+    font-size: 1.3em;
     color: #fff;
 }
 
 .middle-line {
-    background-color: #bc0b0b;
-    height: 50%;
+    background-color: #e26f62;
+    align-self: center;
+    height: 70%;
 }
 
 img {
     max-width: 100%;
+}
+img.logo{
+    width: 80%;
+}
+.logo {
+    text-align: center;
 }
