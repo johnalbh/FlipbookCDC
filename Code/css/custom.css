@@ -280,6 +280,12 @@ a:hover {
     grid-column-gap: 20px;
     padding: 10px 5% 10px 5%;
 }
+.contenido-hoja-cuarta{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    padding: 10px 5% 10px 5%;
+}
 .header {
     background-color: #e26f62;
 }
@@ -374,6 +380,7 @@ ul {
     justify-self: center;
 }
 .right-diseno-2{
+    align-self: center;
     justify-self: center;
 }
 .contenido-hoja-secundaria p {
