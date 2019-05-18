@@ -129,7 +129,6 @@ var Page = (function() {
     }
 
     function updateNavigation(isLastPage) {
-        console.log("Actual", current);
 		if( current === 0 ) {
 			$navNext.show();
             $navPrev.hide();

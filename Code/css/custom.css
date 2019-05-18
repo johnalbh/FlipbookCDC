@@ -83,7 +83,7 @@ a:hover {
 }
 
 .menu-toc {
-    list-style: none;
+    list-style: none !important;
 }
 
 .menu-toc li a {
@@ -223,7 +223,6 @@ a:hover {
     color: #e26f62;
     margin-bottom: 20px;
     text-align: left;
-    text-shadow: 0 0 2px #fff;
 }
 
 .no-js .content h2 {
@@ -338,6 +337,13 @@ hr{
     width: 30%;
     margin-bottom: 10px;
 }
+.completa{
+    background: #e26f62;
+    border: 1px solid #e26f62;
+    height: 3px;
+    width: 100%;
+    margin-bottom: 10px;
+}
 .header-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -374,19 +380,29 @@ p strong{
     padding: 20px 0;
 }
 ul {
-    list-style: inside;
+    list-style: none;
     font-size: 1.2em;
     line-height: 1.6;
     font-weight: 300;
     text-align: justify;
 }
+
+ul li:before {
+    content: '✓';
+    padding-right: 10px;
+  }
+.menu-toc li:before {
+    content: none;
+    padding-right: 10px;
+  }
 .boton{
     display: block;
     text-align: center;
     background: #5fa137;
 	border-radius: 10px;
 	padding: 30px 30px;
-	font-size: 20px;
+    font-size: 20px;
+    font-weight: bolder;
     color: #193c62;
     text-transform: uppercase;
     margin-bottom: 20px;
@@ -460,6 +476,7 @@ ul {
 .azul-fondo h2 {
     color: #9ed6b3;
     font-size: 3.0em;
+    font-weight: bold;
 }
 .azul-fondo hr {
     background: #9ed6b3;
@@ -478,4 +495,8 @@ ul {
 
 .ocultar {
     display: none;
+}
+.left-diseno-2 p,
+.left-diseno-3 p{
+    text-align: left;
 }
