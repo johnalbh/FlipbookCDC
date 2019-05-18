@@ -47,6 +47,11 @@ var Page = (function() {
     }
 
     function initEvents() {
+        if( current === 0 ) {
+            $("#header" ).addClass( "header-blue-page" );
+			$("#logo").attr("src","img/ImagenSuperiorNegro.png");
+			
+		}
 
         // add navigation events
         $navNext.on('click', function() {
@@ -124,17 +129,33 @@ var Page = (function() {
     }
 
     function updateNavigation(isLastPage) {
-
-        if (current === 0) {
-            $navNext.show();
+        console.log("Actual", current);
+		if( current === 0 ) {
+			$navNext.show();
             $navPrev.hide();
-        } else if (isLastPage) {
-            $navNext.hide();
+            $( "#header" ).addClass( "header-blue-page" );
+			/*document.getElementById("header").className =document.getElementById("header").className.replace( /(?:^|\s)header-blue-page(?!\S)/g , '' )*/
+			$("#logo").attr("src","img/ImagenSuperiorNegro.png");
+			
+		}
+		else if( isLastPage ) {
+			$navNext.hide();
+			$navPrev.show();
+		}
+		else {
+            $("#logo").attr("src","img/logo-Superior.png");
+            $( "#header" ).removeClass("header-blue-page" );
+			/*var a=document.getElementById("header").className += " header-paginas";*/
+			$navNext.show();
             $navPrev.show();
-        } else {
-            $navNext.show();
-            $navPrev.show();
-        }
+            if( current == 5 || current == 20 || current == 29){
+                $( "#header" ).addClass( "header-blue-page" );
+                $("#logo").attr("src","img/ImagenSuperiorNegro.png");
+            }
+            else {
+                $( "#header" ).removeClass("header-blue-page" );
+            }
+}
 
     }
 
