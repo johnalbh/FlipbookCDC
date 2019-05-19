@@ -515,7 +515,9 @@
 				return false;
 			}
 
+			this.previous = this.current;
 			this._action(page > this.current ? 'next' : 'prev', page);
+			this.current = page;
 
 		},
 		// public method: check if isAnimating is true

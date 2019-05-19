@@ -27,6 +27,7 @@ var Page = (function() {
         $navNext = $('#bb-nav-next'),
         $navPrev = $('#bb-nav-prev').hide(),
         $menuItems = $container.find('ul.menu-toc > li'),
+        $botones = $container.find('ul.botones > li'),
         $tblcontents = $('#tblcontents'),
         transEndEventNames = {
             'WebkitTransition': 'webkitTransitionEnd',
@@ -87,15 +88,24 @@ var Page = (function() {
 
         // click a menu item
         $menuItems.on('click', function() {
-
             var $el = $(this),
                 idx = $el.index(),
                 jump = function() {
                     bb.jump(idx + 1);
                 };
-
             current !== idx ? closeTOC(jump) : closeTOC();
 
+            return false;
+
+        });
+        $botones.on('click', function() {
+            var $terra = $(this),
+                idx = parseInt($terra.children('a').attr('href').slice(5)),
+                jump = function() {
+                    bb.jump(idx + 1);
+                };
+                closeTOC(jump);
+                current !== idx ? closeTOC(jump) : closeTOC();
             return false;
 
         });
@@ -133,7 +143,7 @@ var Page = (function() {
 			$navNext.show();
             $navPrev.hide();
             $( "#header" ).addClass( "header-blue-page" );
-			/*document.getElementById("header").className =document.getElementById("header").className.replace( /(?:^|\s)header-blue-page(?!\S)/g , '' )*/
+
 			$("#logo").attr("src","img/ImagenSuperiorNegro.png");
 			
 		}
@@ -144,7 +154,6 @@ var Page = (function() {
 		else {
             $("#logo").attr("src","img/logo-Superior.png");
             $( "#header" ).removeClass("header-blue-page" );
-			/*var a=document.getElementById("header").className += " header-paginas";*/
 			$navNext.show();
             $navPrev.show();
             if( current == 5 || current == 20 || current == 29){

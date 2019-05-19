@@ -59,7 +59,7 @@ a:hover {
 }
 
 .menu-panel {
-    background: #f1103a;
+    background: #cf4d3e;
     width: 240px;
     height: 100%;
     position: fixed;
@@ -72,6 +72,7 @@ a:hover {
 .js .menu-panel {
     position: absolute;
     left: -240px;
+    overflow: scroll;
 }
 
 .menu-panel h3 {
@@ -93,8 +94,8 @@ a:hover {
     line-height: 1.5;
     padding: 0 20px;
     cursor: pointer;
-    background: #f1103a;
-    border-bottom: 1px solid #dd1338;
+    background: #cf4d3e;
+    border-bottom: 1px solid #e26f62;
 }
 
 .menu-toc li a:hover,
@@ -113,7 +114,7 @@ a:hover {
     padding: 5px 20px;
     display: block;
     border: none;
-    color: #bc0b0b;
+    color: #e26f62;
     letter-spacing: 1px;
     font-weight: 800;
     text-shadow: 0 1px rgba(255, 255, 255, 0.2);
@@ -232,7 +233,7 @@ a:hover {
 .content p {
     font-size: 1.2em;
     line-height: 1.6;
-    font-weight: 300;
+    font-weight: 400;
     text-align: justify;
 }
 
@@ -383,7 +384,7 @@ ul {
     list-style: none;
     font-size: 1.2em;
     line-height: 1.6;
-    font-weight: 300;
+    font-weight: 400;
     text-align: justify;
 }
 
@@ -392,6 +393,10 @@ ul li:before {
     padding-right: 10px;
   }
 .menu-toc li:before {
+    content: none;
+    padding-right: 10px;
+  }
+  .botones li:before {
     content: none;
     padding-right: 10px;
   }
